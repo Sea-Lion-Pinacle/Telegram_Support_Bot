@@ -1,3 +1,9 @@
-python-telegram-bot==20.7
-pandas==2.2.2
-openpyxl==3.1.2
+cd telegram_support_bot
+
+# NEW requirements.txt - Only 3 lightweight libraries
+echo "python-telegram-bot==20.7
+flask==3.0.0" > requirements.txt
+
+git add requirements.txt
+git commit -m "Fix pandas build error - remove unused deps"
+git push
